@@ -1,0 +1,350 @@
+/*Master styles*/
+
+body {
+    font-family: "Lato",sans-serif;
+    margin: 0px;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*Nav Styles*/
+
+.content-wrapper {
+    margin-top: 60px;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center; /*top to bottom alignment*/
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width:100%;
+    background-color: white;
+    z-index: 100;
+}
+.left-side {
+    display: flex;
+}
+
+.social-logo-wrapper img{
+    width: 25px;
+    filter:opacity(0.7);
+}
+
+.social-logo-wrapper:hover {
+    transition: 0.5s;
+    filter:opacity(0.2);
+}
+
+.right-side {
+    display: flex;
+    margin-right: 30px;
+}
+
+.right-side > .brand {
+    padding-top: 4px;
+    font-weight: 600;
+    filter:opacity(0.7);
+}
+
+.nav-wrapper > .right-side > div {
+    margin-right:20px;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right:20px;
+    font-size:0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+
+/*Portfolio Styles*/
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+
+}
+
+.portfolio-img-background {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*left to right alignment*/
+    align-items: center; /*top to bottom alignment*/
+    height: 100%;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo-wrapper img{
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .h2 {
+    font-size: 3em;
+    color: white;
+    font-weight: 300;
+}
+
+.img-text-wrapper .subtitle {
+    margin-top: 30px;
+    transition: 1s;
+    font-weight: 300;
+    color: transparent;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.img-text-wrapper:hover .subtitle {
+    margin-top: 30px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+}
+
+.img-text-wrapper a {
+    text-decoration: none;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(20%);
+}
+
+
+/*About page styles*/
+
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-img-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1{
+    font-weight: 700;
+
+}
+
+/*Content Styles*/
+
+.content-container-Tab {
+    padding-top: 60px;
+    margin-top: -60px;
+  }
+
+.degree-banner {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+}
+
+#queens, #queensta {
+    color:#B91137;
+}
+
+#uoft {
+    color: #002F65;
+}
+
+#pwc {
+    color: #DB4E18;
+}
+
+.slideshow-container {
+    padding: 50px;
+    padding-top: 25px;
+}
+
+.arrow_slide_container {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    align-items: center; /*top to bottom alignment*/
+
+}
+
+
+
+.degree-logo-pwc img {
+    width: 200px;
+    padding-right: 100px;
+    padding-left: 50px;
+}
+
+.degree-logo img {
+    width: 300px;
+    padding-right: 50px;
+}
+
+.degree-name {
+    font-size: 2.5em;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.degree-description {
+    color: black
+}
+
+.major {
+    font-size: 1em;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.slide-content {
+    display: flex;
+    align-items: center;
+}
+
+.slide-img-container img {
+    height: 250px;
+    padding-left: 50px;
+}
+
+.slide-text-container > .h2, .slide-container > .h2{
+    font-size: 2em;
+    font-weight: 300;
+    padding-bottom: 10px;
+
+}
+
+.slide-subtitle {
+    font-size: 1em;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.slide-description {
+    color: black;
+    font-size: 0.9em;
+
+}
+
+.bold {
+    font-weight: 700;
+
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /*slide show navigation styles*/
+
+ .prev {
+    padding: 20px;
+    color: #bbb;
+    font-size: 2em;
+}
+
+.next {
+    padding: 20px;
+    color: #bbb;
+    font-size: 2em;
+}
+  
+.prev:hover, .next:hover {
+    color: #717171;
+    cursor: pointer;
+
+}
+
+.arrow-whiteout , .arrow-whiteout:hover{
+    color:white;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 2px;
+    margin-bottom: 30px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

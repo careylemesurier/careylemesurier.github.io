@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Page Title</title>
+
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                    <div> CAREY LEMESURIER</div>
+                </div>
+                <div class="social-logo-wrapper">
+                    <a href="https://www.linkedin.com/in/carey-lemesurier-0b2432179/" target="_blank">
+                        <img src="Images/logos/linkedin.png">
+                    </a>
+                </div>
+                <div class="social-logo-wrapper">
+                    <a href="mailto: cjlemesurier@gmail.com">
+                        <img src="Images/logos/email.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <a href="#b1">
+                    <div id="education" class="portfolio-item-wrapper" onclick="openTab('b1','education');">
+                    
+                        <div class="portfolio-img-background" style="background-image:url(Images/ece1.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="Images/logos/education.png">                               
+                            </div>
+                            <div class="h2">Education</div>
+                            <div class="subtitle">
+                                Data Science, Machine Learning, Electrical Engineering . . .
+                                 <br><br>Click to learn more!
+                            </div>                          
+                        </div>
+                    </div>
+                </a>
+                <a href="#b2">
+                    <div id="work" class="portfolio-item-wrapper" onclick="openTab('b2','work');">
+                        <div class="portfolio-img-background" style="background-image:url(Images/building1.jpg)"></div>
+                            
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="Images/logos/work.png" alt="">
+                            </div>
+                            <div class="h2">Work</div>
+                            <div class="subtitle">
+                                Management Consulting, Procurement and Supply Chain, Undergraduate Teaching Experience . . .
+                                <br><br>Click to learn more!
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#b3">
+                    <div id="projects" class="portfolio-item-wrapper" onclick="openTab('b3','projects');">
+                        <div class="portfolio-img-background" style="background-image:url(Images/coding2.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                    <img src="Images/logos/projects.png" alt="">
+                            </div>
+                            <div class="h2">Projects</div>
+                            <div class="subtitle">
+                                Machine Learning, Website Deisgn, Perdictive Analysis . . .
+                                <br><br>Click to learn more!
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            
+            <div id="b1" class="content-container-Tab" style="display:none">
+                <div id="uoft" >
+                    <div class="degree-banner" style="background-color:#d9e9fa;">
+                        <div class="degree-logo">
+                            <img src="Images/logos/logo2.png" alt="">
+                        </div>
+                        <div class="degree-name-container">
+                            <div class="degree-name">
+                                Masters of Science in Applied Computing
+                            </div>
+                            <div class="major">
+                                Data Science Concentration
+                            </div>
+                            <div class="degree-description">
+                                I am currently pursuing my degree in applied computing, speacilizing in the Data Science Concentration. I plan to focus my studies in the area of machine learning with applications in business. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow-container">
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1,'uoft')"></span>
+                            <span class="dot" onclick="currentSlide(2,'uoft')"></span>
+                            <span class="dot" onclick="currentSlide(3,'uoft')"></span>
+
+                        </div>
+
+                        <div class = "arrow_slide_container">
+                            <a class="prev" onclick="plusSlides(-1,'uoft')">&#10094;</a>
+
+                            <div class="all-slides-container">
+
+
+                                <div class="slide-container">
+                                    <div class="h2">Scholarships and Awards</div>
+                                    <div class="slide-subtitle">
+                                        Vector Scholarship In Artificial Intelligence, 2021
+                                    </div>
+                                    <div class="slide-description"> 
+                                        The Vector Scholarship is awarded to top students in AI-related master’s programs in Ontario. These merit-based entrance awards recognize exceptional candidates pursuing a master’s program recognized by the Vector Institute or who are following an individualized study path that is demonstrably AI-focused. 
+                                    </div>
+                                    <div class="slide-subtitle">
+                                        MScAC Entry Scholarship, 2021
+                                    </div>
+                                    <div class="slide-description"> 
+                                        The MScAC program offers ~10 merit based entry scholarships to program applicants per year based on the quality of their application and interview. 
+                                    </div>
+                                </div>
+                                <div class="slide-container">
+                                    <div class="h2">Specailizations (1/2)</div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Data Science
+                                            </div>
+                                            <div class="slide-description">
+                                                In the MScAC program, I am apart of the Data Science Concentration which is a joint program between the departments of Computer Science and Statistics. I am passionate about using my formal training in data science to drive guided and intelligent decision making. 
+                                                <br><br>
+                                                During my degree I will take <strong>Data Science Methods, Collaboration and Communications (STA2453)</strong>, which is a project based course providing experience in real world statistical consulting. During this course I will work on projects brought to the department of Statistics from other research areas as a statistical consultant. 
+                                                <br><br>
+                                                I will also be taking <strong>Statistical Methods for Machine Learning and Data Mining (STA2104)</strong>, where I will learn and master the technical concepts in data science that have built the foundation for machine learning techniques. 
+                                            </div>
+                                            <div class="slide-subtitle">
+                                                Human Computer Interaction
+                                            </div>
+                                            <div class="slide-description">
+                                                During my degree I will take <strong>Topics in Multidisciplinary Human Computer Interaction (CSC2558)</strong>. This course will allow me to study and experiment with designing and implementing self improving user interfacing systems, with an interdisciplinary team.
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="slide-container">
+                                    <div class="h2">Specailizations (2/2)</div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Machine Learning
+                                            </div>
+                                            <div class="slide-description">
+                                                After being introduced to topics in machine learning during my undergraduate degree, I am very motivated to continue to learn and master these techniques during my graduate degree. During my internship I plan on leveraging these learnings to apply machine learning to real world business challenges. 
+                                                <br><br>
+                                                During my degree I will take <strong>Neural Networks and Deep Learning (CSC2516)</strong> to build upon my introductory knowledge of neural networks and study both the foundational ideas and recent advancements in neural net algorithms. This course will provide the technical foundation for me to apply these algorithms during my research internship.
+                                            </div>
+                                            <div class="slide-subtitle">
+                                                Knowledge Representation and Reasoning
+                                            </div>
+                                            <div class="slide-description">
+                                                During my degree I will take <strong>Knowledge Representation and Reasoning (CSC2502)</strong>, to learn how I can use automated and associated reasoning methods when building predictive and intelligent solutions.                                    
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                            <img src="Images/nn.jpeg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="next" onclick="plusSlides(1,'uoft')">&#10095;</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="queens">
+                    <div class="degree-banner" style="background-color:#fcd7df;">
+                        <div class="degree-logo">
+                            <img src="Images/logos/logo1.png" alt="">
+                        </div>
+                        <div class="degree-name-container">
+                            <div class="degree-name">
+                                Bachelor of Applied Science
+                            </div>
+                            <div class="major">
+                                Electrical Engineering
+                            </div>
+                            <div class="degree-description">
+                                I completed my undergraduate degree in Electrical Engineering at Queen's University. My areas of focus included; Data Analytics, Machine learning, and Robotics.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow-container">
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1,'queens')"></span>
+                            <span class="dot" onclick="currentSlide(2,'queens')"></span>
+                            <span class="dot" onclick="currentSlide(3,'queens')"></span>
+
+
+                        </div>
+
+                        <div class = "arrow_slide_container">
+                            <a class="prev" onclick="plusSlides(-1,'queens')">&#10094;</a>
+
+                            <div class="all-slides-container">
+
+                                <div class="slide-container">
+                                    <div class="h2">Scholarships and Awards</div>
+                                    <div class="slide-subtitle">
+                                        Gold Medal in Electrical Engineering, 2019
+                                    </div>
+                                    <div class="slide-description"> 
+                                        The Gold Medal in Electrical Engineering is awarded to the graduating student who achieves the highest GPA in the Electrical Engineering Department
+                                    </div>
+                                    <div class="slide-subtitle">
+                                        Thomas F. Lapierre Award, 2019
+                                    </div>
+                                    <div class="slide-description"> 
+                                        The Thomas F. Lapierre Award is awarded to the graduating student with the highest honours standing in the Department of Electrical and Computer Engineering
+                                    </div>
+                                    <div class="slide-subtitle">
+                                        D.M. Jemmett Award, 2019
+                                    </div>
+                                    <div class="slide-description"> 
+                                        The D.M. Jemmett Award is awarded to the graduating student who achieves the highest average in Electrical Engineering courses of all years
+                                    </div>
+                                    <div class="slide-subtitle">
+                                        3rd Place Prize in the Engineering Capstone Design Competition, 2019
+                                    </div>
+                                    <div class="slide-description"> 
+                                        This prize is awarded to the 3rd highest scoring team in the fourth year capstone design competition, scored by participating academic supervisors 
+                                    </div>
+                                    <div class="slide-subtitle">
+                                        The Ingenium Group/Joe Dominik Scholarship, 2018
+                                    </div>
+                                    <div class="slide-description"> 
+                                        The Ingenium Group/Joe Dominik Scholarship is awarded on the basis of academic excellence to a full-time electrical engineering student entering the third year of study
+                                    </div>
+                                    <div class="slide-subtitle">
+                                        Dean’s Scholar, 2019, 2018, 2017, 2016
+                                    </div>
+                                    <div class="slide-description"> 
+                                        The Dean's Scholar is awarded to students who achieve a combined term GPA of 3.5 or higher while taking 16.1 units or higher
+                                    </div>
+                                    <div class="slide-subtitle">
+                                        Queen’s University Excellence Scholarship, 2015
+                                    </div>
+                                    <div class="slide-description"> 
+                                        The Excellence Scholarship is awarded to incoming students who achieved an academic average of 90.0%-94.9% in their final year of high school
+                                    </div>
+                                </div>
+                            
+                               
+
+                                <div class="slide-container">
+                                    <div class="h2">Extracurricular Experience (1/2)</div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                QMIND (Queen’s Machine Intelligence and Neuroevolution Design), 2018-19
+                                            </div>
+                                            <div class="slide-description">
+                                                QMIND is an engineering design club at Queen’s University, made up of various teams of 4-5 students. Each team is tasked with researching and solving a project using Artificial Intelligence and Machine Learning. 
+                                                <br> <br>
+                                                I worked as a team lead, managing a design team of 4 interdisciplinary undergraduate students. 
+                                                My team’s objective was to research different machine learning methods and compare their ability to predict the long term price of a stock based on historical data. 
+                                                To learn more about this project and our solution, please <a href="#b3" onclick="openTab('b3','projects');">click here</a> to see the Project Section. 
+                                                <br> <br>
+                                                As a leader in the QMIND design team, I also had the opportunity to present at the Canadian Undergraduate Conference on AI (CUCAI). This conference included an open house session for QMIND design teams to showcase their work. During this session, I presented and discussed my team’s research with the conference attendees and industry representatives.
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                            <img src="Images/qmindteam.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-container">
+                                    <div class="h2">Extracurricular Experience (2/2)</div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Engineering Society Orientation Week Leader (FREC), 2016
+                                            </div>
+                                            <div class="slide-description">
+                                                As a second year student, I mentored and led a group of ~30 new students through their Engineering Society orientation. I coordinated a high-energy and engaging week of activities, teaching the new students about Queen’s Engineering and easing their transition into university. 
+                                                <br> <br>
+                                                Throughout the rest of the year, I maintained trusted relationships with my entire group by organizing unofficial events and establishing communication channels to ensure my students felt well supported throughout their first year at university. 
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                            <img src="Images/frec.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        <a class="next" onclick="plusSlides(1,'queens')">&#10095;</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="b2" class="content-container-Tab" style="display:none">
+                <div id="pwc">
+                    <div class="degree-banner" style="background-color:#ffd7bd;">
+                        <div class="degree-logo-pwc">
+                            <img src="Images/logos/logo3.svg" alt="">
+                        </div>
+                        <div class="degree-name-container">
+                            <div class="degree-name">
+                                Management Consulting
+                            </div>
+                            <div class="major">
+                                Procurement Transformations and Enterprise Applications
+                            </div>
+                            <div class="degree-description">
+                                I have 2 years of experience working with clients from various industries including Financial Services, Public Sector, EUMI, and more, to streamline their procurement operations and achieve sustainable cost savings across their business. Click through the dots to learn more about the clients and projects I worked on!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow-container">
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1,'pwc')"></span>
+                            <span class="dot" onclick="currentSlide(2,'pwc')"></span>
+                            <span class="dot" onclick="currentSlide(3,'pwc')"></span>
+                            <span class="dot" onclick="currentSlide(4,'pwc')"></span>
+                            <span class="dot" onclick="currentSlide(5,'pwc')"></span>
+                            <span class="dot" onclick="currentSlide(6,'pwc')"></span>
+
+                        </div>
+                        
+                        <div class = "arrow_slide_container">
+                            <a class="prev" onclick="plusSlides(-1,'pwc')">&#10094;</a>
+
+                            <div class="all-slides-container">
+
+                                <div class="slide-container">
+                                    <div class="h2">Major Canadian Bank, 2020</div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Clinet's Challenge
+                                            </div>
+                                            <div class="slide-description"> 
+                                                The client was facing significant risk based on their lack of visibility and tracking of their contingient labour workforce. To solve this the client decided to implement SAP Fieldgalss, a leading Vendor Management system to optimize their use of contingent labour. This project also presented a great opportunity for the bank to got to market in order to consolidate their contingent labour supplier base to realize significant cost savings. 
+                                            </div>
+                                            <div class="slide-subtitle">
+                                                My Role
+                                            </div>
+                                            <div class="slide-description"> 
+                                                I analyzed the results of the client’s contingent labour Request for Proposal (RFP), which was sent to ~200 suppliers, and using a savings-based evaluation framework, I uncovered insights that drove the 3-round negotiation, ultimately leading to $20MM+ in annual savings. 
+                                                <br> As part of the bank’s SAP Fieldglass implementation, I developed a plan to transition ~2800 existing contractors to the platform and supported the design of the future sustainment organization which included the successful closure of ~20 audit gaps.
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                            <img src="Images/digital.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-container">
+                                    <div class="h2">Canadian Provincial Government, 2020 </div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Client's Challenge
+                                            </div>
+                                            <div class="slide-description">
+                                                To modernize and streamline their back office processes this Canadian Provincial government was undertaking a full SAP implementation for their HR, finance, and supply chain functions.                                    </div>
+                                            <div class="slide-subtitle">
+                                                My Role
+                                            </div>
+                                            <div class="slide-description">
+                                                I was responsible for leading the user acceptance testing of the Finance solution across the 17 ministries. I lead and coordinated the testing of 27 scripts over 12 sessions with >450 client participants. To achieve this, I worked closely with a team of 10 functional experts, holding them to deadlines, tracking progress, and providing support when needed. To ensure clear and up to date communication, I developed detailed progress tracking reports, that were ultimately adopted by the Project Management Office for all functional streams. 
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                            <img src="Images/gov.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-container">
+                                    <div class="h2">Canadian Retail Corporation, 2021 </div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Client's Challenge
+                                            </div>
+                                            <div class="slide-description">
+                                                The client was undergoing a large HR and payroll business transformation, supported by implementing Workday, to modernize and streamline their HR technology.                                            </div>
+                                            <div class="slide-subtitle">
+                                                My Role
+                                            </div>
+                                            <div class="slide-description">
+                                                I was responsible for converting the data in their legacy databases to the format required for inputting into the new system. I built over 20 Alteryx workflows that pulled the relevant data from the database directly, manipulated and converted it to the correct format, and output the result in the provided Workday template. The workflows I built were able to be used multiple times, through both the various testing phases, and at the official cutover from the legacy system to Workday. Using robust and tested workflows ensured a smooth and successful system go live. 
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                            <img src="Images/ctc.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-container">
+                                    <div class="h2">North American Retail Auto and Glass Repair, 2021 </div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Client's Challenge
+                                            </div>
+                                            <div class="slide-description">
+                                                This client’s procurement function was extremely decentralized with over 700 locations across North America. While undergoing a full Enterprise Resource Planning (ERP) technology implementation, the client realized their procurement function was not ready to adopt the new technology and gain the desired benefits.
+                                            </div>
+                                            <div class="slide-subtitle">
+                                                My Role
+                                            </div>
+                                            <div class="slide-description">
+                                                I worked with the client to understand their current processes, key pain points, and future state goals. Working closely with the ERP technical experts I created 8 detailed process maps to standardize processes and improve efficiency. To supplement the process maps I developed corresponding RACI (Responsible, Accountable, Consulted, Informed) charts, which detailed the stockholders involved in each process and their specific role. Lastly, I analyzed the entire corporation’s historic spending data, and created an interactive dashboard to visually show top suppliers and spend by location, business group, and spend category. This analysis helped inform many key project decisions, including process steps, the supplier enablement strategy, and the technology configuration.
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                            <img src="Images/car.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-container">
+                                    <div class="h2">Canadian Public Sector, 2021 </div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Client's Challenge
+                                            </div>
+                                            <div class="slide-description">
+                                                This client’s standard procurement process was extremely rigid and tedious. With an increase in complex and non-standard technical projects, the client realized they needed a more flexible and collaborative way to procure and evaluate supplier bids. 
+                                            </div>
+                                            <div class="slide-subtitle">
+                                                My Role
+                                            </div>
+                                            <div class="slide-description">
+                                                My team worked with the client to design specialized procurement techniques to address their current challenges, by leveraging the agile methodology. As a certified Agile Scrum Master, I leveraged my knowledge of agile methodology to come up with new and innovative ways of using agile in procurement processes. I was responsible for developing a set of resources for procurement specialists across the organization to use as a support to deploying agile procurement initiatives. I developed a screening questionnaire to assess the eligibility for agile procurement, a comprehensive Agile Procurement playbook, and evaluation methodology.
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                            <img src="Images/cangov3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-container">
+                                    <div class="h2">Global LNG Operator, 2021 </div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Client's Challenge
+                                            </div>
+                                            <div class="slide-description">
+                                                After a significant amount of growth, this client found themselves being slowed down by inefficient and manual back office processes supported by siloed and unintegrated technologies.
+                                            </div>
+                                            <div class="slide-subtitle">
+                                                My Role
+                                            </div>
+                                            <div class="slide-description">
+                                                My team was engaged to assess the client’s current state and future state goals across all functional areas, to ultimately produce a business case for implementing (or not) implementing SAP. I prepared materials and facilitated 17 collaborative workshops across 5 process areas to identify key pain points and opportunities. I developed the procurement and supply chain business case for implementing SAP, identifying a potential ~$5.4MM in savings associated with the proposed solution.
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                            <img src="Images/gas.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="next" onclick="plusSlides(1,'pwc')">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="queensta">
+                    <div class="degree-banner" style="background-color:#fcd7df;">
+                        <div class="degree-logo">
+                            <img src="Images/logos/logo1.png" alt="">
+                        </div>
+                        <div class="degree-name-container">
+                            <div class="degree-name">
+                                Teaching Assistant
+                            </div>
+                            <div class="major">
+                                Departement of Electrical and Computer Engineering
+                            </div>
+                            <div class="degree-description">
+                                I assisted multiple professors in the department of Electrical and Computer Engineering facilitate various courses and laboratory sessions. Click through the following slides to learn more about the courses I led!                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow-container">
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1,'queensta')"></span>
+                            <span class="dot" onclick="currentSlide(2,'queensta')"></span>
+                            <span class="dot" onclick="currentSlide(3,'queensta')"></span>
+                            <span class="dot" onclick="currentSlide(4,'queensta')"></span>
+                        </div>
+                        
+                        <div class = "arrow_slide_container">
+                            <a class="prev" onclick="plusSlides(-1,'queensta')">&#10094;</a>
+
+                            <div class="all-slides-container">
+
+                                <div class="slide-container">
+                                    <div class="h2">Numerical Methods and Optimization (ELEC 273), 2019</div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Course Description:
+                                            </div>
+                                            <div class="slide-description"> 
+                                                This course offers a balance of theory and practice in numerical methods and optimization. Topics include numerical representations, error analysis, iteration, linear algebraic tools such a singular value and PLU decompositions, interpolation, curve-fitting, approximation, least squares, single and multivariable optimization, constraint optimization, integration, differentiation, and solving ordinary differential equations. Extensive computer programming using MATLAB                                            </div>
+                                            <div class="slide-subtitle">
+                                                My Role
+                                            </div>
+                                            <div class="slide-description"> 
+                                                I hosted office hours for students to come in and ask questions. During these sessions I would help students understand concepts and work through difficult homework problems. 
+                                                <br><br>I also assisted students in their laboratory sessions, by reviewing their code and helping them debug it. While working with students I would always have them first explain their approach and the steps they had attempted to debug. I would then work with the students to pinpoint the mistake and then explain and discuss the underlying theory or syntax error, so that they would be able to fix the issue themselves and avoid encountering it again.</div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                            <img src="Images/nummethods.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-container">
+                                    <div class="h2">Electronics 1 (ELEC 252), 2019</div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">        
+                                    
+                                            <div class="slide-subtitle">
+                                                Course Description:
+                                            </div>
+                                            <div class="slide-description">
+                                                This course is an introduction to semiconductor electronics. Topics studied include: operational amplifiers; dc and small signal models for diodes, basic principles of bipolar transistors and field effect transistors, dc analysis of electronic circuits and practical applications of the devices to the design of power supplies, amplifiers and digital logic circuits.                                    </div>
+                                            <div class="slide-subtitle">
+                                                My Role
+                                            </div>
+                                            <div class="slide-description">
+                                                I assisted students in their laboratory sessions, helping them pinpoint their issues by walking them through various checks on their circuitboard. Once identified, I would work with the students to solve the issue by asking questions and discussing the underlying theories. I also worked with the professor to mark lab reports based on a standard matrix.
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                            <img src="Images/electronics.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-container">
+                                    <div class="h2">Microprocessor Interfacing and Embedded Systems (ELEC 371), 2018</div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Course Description:
+                                            </div>
+                                            <div class="slide-description">
+                                                This course provides an in-depth exploration of hardware/software interfacing for microprocessor-based systems, including microcontrollers, with the aim of imparting sufficient knowledge to enable students to design and implement systems of their own, particularly for embedded applications. The philosophy of the course is to progress from low-level internal interconnections and input/output interfaces, through software issues and interrupt processing, to high-level considerations for embedded and system-on-chip applications.
+                                            </div>
+                                            <div class="slide-subtitle">
+                                                My Role
+                                            </div>
+                                            <div class="slide-description">
+                                                I assisted students in their laboratory sessions, by reviewing their code and helping them debug it. While working with students I would always have them first explain their approach and the steps they had attempted to debug. I would then work with the students to pinpoint the mistake and then explain and discuss the underlying theory or syntax error, so that they would be able to fix the issue themselves and avoid encountering it again.
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                            <img src="Images/microp.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-container">
+                                    <div class="h2">Electric Circuits (ELEC221), 2017 </div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Course Description:
+                                            </div>
+                                            <div class="slide-description">
+                                                Electric circuit theory and electromagnetic theory are the two fundamental theories upon which all branches of electrical engineering are built, including computer engineering. Many branches of electrical engineering such as power, electric machines, control, electronics, communications, and instrumentation, are based on electric circuit theory. Therefore, the basic electric circuit theory is "the" foundation and starting point for what follows in electrical and computer engineering programs.
+                                            </div>
+                                            <div class="slide-subtitle">
+                                                My Role
+                                            </div>
+                                            <div class="slide-description">
+                                                I assisted students in their laboratory sessions, helping them pinpoint their issues by walking them through various checks on their circuitboard. Once identified, I would work with the students to solve the issue by asking questions and discussing the underlying theories.
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                            <img src="Images/circuits.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <a class="next" onclick="plusSlides(1,'queensta')">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="b3" class="content-container-Tab" style="display:none">
+                <h2>Projects</h2>
+                <p>coming soon...</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    function openTab(tabName,portfolioName) {
+        var i, x, y;
+        x = document.getElementsByClassName("content-container-Tab");
+        y =document.getElementsByClassName("portfolio-item-wrapper");
+
+        if (document.getElementById(tabName).style.display == "block"){
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        } else {
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+            for (i = 0; i < y.length; i++) {
+                if(y[i].id!=portfolioName){
+                    y[i].childNodes[1].classList.remove('img-darken');
+                }
+            }
+            
+        }
+    }
+    slideIndex_uoft = 1;
+    slideIndex_queens = 1;
+    slideIndex_pwc = 1;
+    slideIndex_queensta = 1;
+
+   
+    showSlides(slideIndex_uoft,'uoft');
+    showSlides(slideIndex_queens,'queens');
+    showSlides(slideIndex_pwc,'pwc');
+    showSlides(slideIndex_queensta,'queensta');
+
+    // Thumbnail image controls
+    function currentSlide(n,idName) {
+        if (idName=='uoft'){
+            slideIndex_uoft = n;
+            showSlides(slideIndex_uoft,idName);
+        }
+        if (idName=='queens'){
+            slideIndex_queens = n;
+            showSlides(slideIndex_queens,idName);
+        }
+        if (idName=='pwc'){
+            slideIndex_pwc = n;
+            showSlides(slideIndex_pwc,idName);
+        }
+        if (idName=='queensta'){
+            slideIndex_queensta = n;
+            showSlides(slideIndex_queensta,idName);
+        }
+    }
+
+    function plusSlides(n, idName) {
+        if (idName=='uoft'){
+            if ((slideIndex_uoft==1) && (n==-1)){
+                showSlides(slideIndex_uoft,idName)
+            }
+            else if ((slideIndex_uoft==3) && (n==1)){
+                showSlides(slideIndex_uoft,idName)
+            }
+            else {
+                showSlides(slideIndex_uoft+=n,idName)
+            }
+        }
+        if (idName=='queens'){
+            if ((slideIndex_queens==1) && (n==-1)){
+                showSlides(slideIndex_queens,idName)
+            }
+            else if ((slideIndex_queens==3) && (n==1)){
+                showSlides(slideIndex_queens,idName)
+            }
+            else {
+                showSlides(slideIndex_queens+=n,idName)
+            }
+        }
+        if (idName=='pwc'){
+            if ((slideIndex_pwc==1) && (n==-1)){
+                showSlides(slideIndex_pwc,idName)
+                
+            }
+            else if ((slideIndex_pwc==6) && (n==1)){
+                showSlides(slideIndex_pwc,idName)
+            }
+            else {
+                showSlides(slideIndex_pwc+=n,idName)
+            }
+        }
+        if (idName=='queensta'){
+            if ((slideIndex_queensta==1) && (n==-1)){
+                showSlides(slideIndex_queensta,idName)
+            }
+            else if ((slideIndex_queensta==4) && (n==1)){
+                showSlides(slideIndex_queensta,idName)
+            }
+            else {
+                showSlides(slideIndex_queensta+=n,idName)
+            }
+        }
+    }
+
+    function showSlides(n,idName) {
+        var i;
+        var slides = document.getElementById(idName).getElementsByClassName("slide-container");
+        var dots = document.getElementById(idName).getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[n-1].style.display = "block";
+        dots[n-1].className += " active";
+
+        if (idName == "pwc") {
+            if (slideIndex_pwc==1){
+                document.getElementById(idName).getElementsByClassName("prev")[0].className += " arrow-whiteout";
+                document.getElementById(idName).getElementsByClassName("next")[0].className = "next";
+            }
+            else if (slideIndex_pwc==6){
+                document.getElementById(idName).getElementsByClassName("next")[0].className += " arrow-whiteout";
+                document.getElementById(idName).getElementsByClassName("prev")[0].className = "prev";
+            }
+            else {
+                document.getElementById(idName).getElementsByClassName("prev")[0].className = "prev";
+                document.getElementById(idName).getElementsByClassName("next")[0].className = "next";
+            }
+        }
+
+        else if (idName == "uoft") {
+            if (slideIndex_uoft==1){
+                document.getElementById(idName).getElementsByClassName("prev")[0].className += " arrow-whiteout";
+                document.getElementById(idName).getElementsByClassName("next")[0].className = "next";
+            }
+            else if (slideIndex_uoft==3){
+                document.getElementById(idName).getElementsByClassName("next")[0].className += " arrow-whiteout";
+                document.getElementById(idName).getElementsByClassName("prev")[0].className = "prev";
+            }
+            else {
+                document.getElementById(idName).getElementsByClassName("prev")[0].className = "prev";
+                document.getElementById(idName).getElementsByClassName("next")[0].className = "next";
+            }
+        }
+        else if (idName == "queens") {
+            if (slideIndex_queens==1){
+                document.getElementById(idName).getElementsByClassName("prev")[0].className += " arrow-whiteout";
+                document.getElementById(idName).getElementsByClassName("next")[0].className = "next";
+            }
+            else if (slideIndex_queens==3){
+                document.getElementById(idName).getElementsByClassName("next")[0].className += " arrow-whiteout";
+                document.getElementById(idName).getElementsByClassName("prev")[0].className = "prev";
+            }
+            else {
+                document.getElementById(idName).getElementsByClassName("prev")[0].className = "prev";
+                document.getElementById(idName).getElementsByClassName("next")[0].className = "next";
+            }
+        }
+        else if (idName == "queensta") {
+            if (slideIndex_queensta==1){
+                document.getElementById(idName).getElementsByClassName("prev")[0].className += " arrow-whiteout";
+                document.getElementById(idName).getElementsByClassName("next")[0].className = "next";
+            }
+            else if (slideIndex_queensta==4){
+                document.getElementById(idName).getElementsByClassName("next")[0].className += " arrow-whiteout";
+                document.getElementById(idName).getElementsByClassName("prev")[0].className = "prev";
+            }
+            else {
+                document.getElementById(idName).getElementsByClassName("prev")[0].className = "prev";
+                document.getElementById(idName).getElementsByClassName("next")[0].className = "next";
+            }
+        }
+    }
+
+
+
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    const x = document.getElementsByClassName("content-container-Tab")
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover',()=>{
+           portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout',()=>{
+            if(document.getElementById('b1').style.display == "block"){
+                if(portfolioItem.id != "education"){
+                    portfolioItem.childNodes[1].classList.remove('img-darken');
+                }
+            } 
+            else if(document.getElementById('b2').style.display == "block"){
+                if(portfolioItem.id != "work"){
+                    portfolioItem.childNodes[1].classList.remove('img-darken');
+                }
+            } 
+            else if(document.getElementById('b3').style.display == "block"){
+                if(portfolioItem.id != "projects"){
+                    portfolioItem.childNodes[1].classList.remove('img-darken');
+                }
+            } 
+            else {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            }
+        })
+    })
+
+    
+
+
+</script>
+
+</html>
+
