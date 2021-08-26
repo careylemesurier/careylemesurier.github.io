@@ -167,7 +167,7 @@ body {
 
 .two-column-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
 }
 
 .profile-img-wrapper img {
@@ -176,6 +176,7 @@ body {
 
 .profile-content-wrapper {
     padding: 30px;
+    align-items: center;
 }
 
 .profile-content-wrapper h1{
@@ -196,6 +197,15 @@ body {
     align-items: center;
 }
 
+.degree-banner-projects {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
 #queens, #queensta {
     color:#B91137;
 }
@@ -206,6 +216,10 @@ body {
 
 #pwc {
     color: #DB4E18;
+}
+
+#projects_section {
+    color: #1D541F;
 }
 
 .slideshow-container {
@@ -254,8 +268,23 @@ body {
     align-items: center;
 }
 
+.slide-content-top {
+    display: flex;
+    align-items: top;
+}
+
 .slide-img-container img {
     height: 250px;
+    padding-left: 50px;
+}
+
+.slide-img-container-med img{
+    height: 350px;
+    padding-left: 50px;
+}
+
+.slide-img-container-large img{
+    height: 500px;
     padding-left: 50px;
 }
 
@@ -279,8 +308,10 @@ body {
 
 }
 
-.bold {
-    font-weight: 700;
+.degree-logo-projects_section img {
+    /*-webkit-filter: invert(100%); /* Safari/Chrome */
+    /*filter: invert(100%);*/
+    height: 200px;
 
 }
   

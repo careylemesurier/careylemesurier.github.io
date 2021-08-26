@@ -85,7 +85,7 @@
                             </div>
                             <div class="h2">Projects</div>
                             <div class="subtitle">
-                                Machine Learning, Website Deisgn, Perdictive Analysis . . .
+                                Machine Learning, Predictive Analysis, Object Oriented Programming . . .
                                 <br><br>Click to learn more!
                             </div>
                         </div>
@@ -286,7 +286,7 @@
                                                 <br> <br>
                                                 I worked as a team lead, managing a design team of 4 interdisciplinary undergraduate students. 
                                                 My team’s objective was to research different machine learning methods and compare their ability to predict the long term price of a stock based on historical data. 
-                                                To learn more about this project and our solution, please <a href="#b3" onclick="openTab('b3','projects');">click here</a> to see the Project Section. 
+                                                To learn more about this project and our solution, please <a href="#b3" onclick="openTab('b3','projects');currentSlide(2,'projects_section');">click here</a> to see the Project Section. 
                                                 <br> <br>
                                                 As a leader in the QMIND design team, I also had the opportunity to present at the Canadian Undergraduate Conference on AI (CUCAI). This conference included an open house session for QMIND design teams to showcase their work. During this session, I presented and discussed my team’s research with the conference attendees and industry representatives.
                                             </div>
@@ -298,7 +298,7 @@
                                 </div>
                                 <div class="slide-container">
                                     <div class="h2">Extracurricular Experience (2/2)</div>
-                                    <div class="slide-content">
+                                    <div class="slide-content-top">
                                         <div class="slide-text-container">
                                             <div class="slide-subtitle">
                                                 Engineering Society Orientation Week Leader (FREC), 2016
@@ -467,7 +467,7 @@
                                 </div>
                                 <div class="slide-container">
                                     <div class="h2">Global LNG Operator, 2021 </div>
-                                    <div class="slide-content">
+                                    <div class="slide-content-top">
                                         <div class="slide-text-container">
                                             <div class="slide-subtitle">
                                                 Client's Challenge
@@ -619,8 +619,145 @@
             </div>
 
             <div id="b3" class="content-container-Tab" style="display:none">
-                <h2>Projects</h2>
-                <p>coming soon...</p>
+                <div id="projects_section">
+                    <div class="degree-banner-projects" style="background-color:#CFE8CF;">
+                        <div class="degree-logo-projects_section">
+                            <img src="Images/logos/projectsgreen.png" alt="">
+                        </div>
+                        <div class="degree-name-container">
+                            <div class="degree-name">
+                                Technical Project Experience
+                            </div>
+                            <div class="major">
+                                Educational and Personal Projects
+                            </div>
+                            <div class="degree-description">
+                                My favourite way to learn new skills and master concepts is to apply them to practical projects. I love to work on challenging and innovative projects, always pushing myself to continue to learn. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow-container">
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1,'projects_section')"></span>
+                            <span class="dot" onclick="currentSlide(2,'projects_section')"></span>
+                            <span class="dot" onclick="currentSlide(3,'projects_section')"></span>
+                            <span class="dot" onclick="currentSlide(4,'projects_section')"></span>
+
+                        </div>
+                        
+                        <div class = "arrow_slide_container">
+                            <a class="prev" onclick="plusSlides(-1,'projects_section')">&#10094;</a>
+
+                            <div class="all-slides-container">
+
+                                <div class="slide-container">
+                                    <div class="h2">Detecting Senior Falls, 2018-19</div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Objective
+                                            </div>
+                                            <div class="slide-description"> 
+                                                For my fourth year capstone project, my team’s objective was to develop a deep learning neural network that could predict human falls based off of live smart phone data, collected from the internal accelerometer and gyroscope. 
+                                                <br> <br>
+                                            </div>
+                                            <div class="slide-subtitle">
+                                                Solution
+                                            </div>
+                                            <div class="slide-description"> 
+                                                My team developed a deep learning algorithm that produced an ~83% accuracy on data collected live during the demo. During development, the model produced ~90% accuracy on an unseen segment of the training data. The confusion matrix shown to the right, visually displays these final results during development. 
+                                                <br> <br>
+                                                My role within the team was the Data and Integrations Lead, responsible for managing and executing all aspects of the project related to the data and user interface. I researched and identified a dataset of 600 samples, which was used to train the model. To validate the usability of the data for the project, I designed a machine learning program, using the TensorFlow library in python, which produced a 99% prediction accuracy. I also designed the user interface which captured the data from the phone, fed it through the network, and produced a result in real time.
+                                                <br> <br>
+                                                <a href = "https://vimeo.com/325279823">Click here</a> to see a video of our teams final presentation. 
+                                                   
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container-med">
+                                            <img src="Images/capstone.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-container">
+                                    <div class="h2">Future Predictions for Financial Markets, 2018-19</div>
+                                    <div class="slide-content-top">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                <br> 
+                                                Objective
+                                            </div>
+                                            <div class="slide-description"> 
+                                                As a team lead for the QMIND design team, I led a team of students through an extracurricular machine learning research project. <a href="#queens" onclick="openTab('b1','queens'); currentSlide(2,'queens');">Click here</a> to learn more about my experience in QMIND. 
+                                                <br> <br>
+                                                My team’s objective was to research different machine learning methods and compare their ability to predict the long term price of a stock based on historical data.
+                                                <br> <br>
+                                            </div>
+                                            <div class="slide-subtitle">
+                                                Solution
+                                            </div>
+                                            <div class="slide-description"> 
+                                                The team worked in two sub teams. The first was responsible for web scraping and consolidating the historical stock price data from public websites. The second sub-team worked on finding open source machine learning algorithms in python and modifying them to achieve our objective. 
+                                                <br> <br>
+                                                Through experimenting with various algorithms, the team concluded that the long short-term memory (LSTM) neural network produced the most accurate predictions. This algorithm worked well because it considered all historic data, while prioritizing the most recent data samples. The graph displayed here, shows the actual stock market price fluctuations for the Google stock (blue), versus our LSTM model’s predicted future prices (red). 
+                                                <br> <br>
+                                                While our research produced meaningful results, it is important to understand the limitations of our project. In order to continue to enhance our model, it would be important to consider other key market indicators, other than just the past stock prices. 
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container-large">
+                                            <img src="Images/Predictions.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-container">
+                                    <div class="h2">Customer Data Analytics, 2018</div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Objective
+                                            </div>
+                                            <div class="slide-description"> 
+                                                The course project for my fourth year Data Analytics course, required me to analyze a large (7000+ entries) dataset of mock customer data for an Internet Service Provider, to identify reasons customers were leaving. 
+                                                <br> <br>
+                                            </div>
+                                            <div class="slide-subtitle">
+                                                Solution
+                                            </div>
+                                            <div class="slide-description"> 
+                                                I cleaned and analyzed this data using KNIME, a data analytics platform. I analyzed the various customer attributes to determine the most significant attributes to consider, using techniques including statistics and correlation. Once I understood the attributes that most significantly correlated to customers leaving, I was able to apply more advanced prediction algorithms to this subset of the attributes. These algorithms included both supervised (decision tree, random forest, multilayer perceptron) and unsupervised (clustering) learning techniques. For the supervised learning algorithms I was able to achieve ~85% prediction accuracy, which validated the final conclusions I made as to why customers were leaving the company.
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-container">
+                                    <div class="h2">Hotel Reservation System, 2018</div>
+                                    <div class="slide-content">
+                                        <div class="slide-text-container">
+                                            <div class="slide-subtitle">
+                                                Objective
+                                            </div>
+                                            <div class="slide-description"> 
+                                                While studying at the Nanyang Technological University in Singapore, I completed a course project for Object Oriented Programming (OOP). The objective of this project was to develop a comprehensive hotel reservation system using OOP in Java.
+                                            </div>
+                                            <div class="slide-subtitle">
+                                                Solution
+                                            </div>
+                                            <div class="slide-description"> 
+                                                My team developed a system with check in and out functions for various room sizes, and tracked information such as room occupancy, guest lists, and invoices. During this project I was responsible for developing the main program that called all other aspects of the code developed by the rest of the team. I also developed the full UML diagram which kept the entire team aligned on the various classes and methods and how they all interacted.
+                                            </div>
+                                        </div>
+                                        <div class="slide-img-container">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <a class="next" onclick="plusSlides(1,'projects_section')">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -653,12 +790,13 @@
     slideIndex_queens = 1;
     slideIndex_pwc = 1;
     slideIndex_queensta = 1;
-
+    slideIndex_projects = 1;
    
     showSlides(slideIndex_uoft,'uoft');
     showSlides(slideIndex_queens,'queens');
     showSlides(slideIndex_pwc,'pwc');
     showSlides(slideIndex_queensta,'queensta');
+    showSlides(slideIndex_projects,'projects_section');
 
     // Thumbnail image controls
     function currentSlide(n,idName) {
@@ -677,6 +815,10 @@
         if (idName=='queensta'){
             slideIndex_queensta = n;
             showSlides(slideIndex_queensta,idName);
+        }
+        if (idName=='projects_section'){
+            slideIndex_projects = n;
+            showSlides(slideIndex_projects,idName);
         }
     }
 
@@ -724,6 +866,17 @@
             }
             else {
                 showSlides(slideIndex_queensta+=n,idName)
+            }
+        }
+        if (idName=='projects_section'){
+            if ((slideIndex_projects==1) && (n==-1)){
+                showSlides(slideIndex_projects,idName)
+            }
+            else if ((slideIndex_projects==4) && (n==1)){
+                showSlides(slideIndex_projects,idName)
+            }
+            else {
+                showSlides(slideIndex_projects+=n,idName)
             }
         }
     }
@@ -792,6 +945,20 @@
                 document.getElementById(idName).getElementsByClassName("next")[0].className = "next";
             }
             else if (slideIndex_queensta==4){
+                document.getElementById(idName).getElementsByClassName("next")[0].className += " arrow-whiteout";
+                document.getElementById(idName).getElementsByClassName("prev")[0].className = "prev";
+            }
+            else {
+                document.getElementById(idName).getElementsByClassName("prev")[0].className = "prev";
+                document.getElementById(idName).getElementsByClassName("next")[0].className = "next";
+            }
+        }
+        else if (idName == "projects_section") {
+            if (slideIndex_projects==1){
+                document.getElementById(idName).getElementsByClassName("prev")[0].className += " arrow-whiteout";
+                document.getElementById(idName).getElementsByClassName("next")[0].className = "next";
+            }
+            else if (slideIndex_projects==4){
                 document.getElementById(idName).getElementsByClassName("next")[0].className += " arrow-whiteout";
                 document.getElementById(idName).getElementsByClassName("prev")[0].className = "prev";
             }
