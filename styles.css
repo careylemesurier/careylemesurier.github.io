@@ -11,6 +11,9 @@ body {
     grid-template-columns: 1fr;
 }
 
+.dontdisplay {
+    display: none;
+}
 /*Nav Styles*/
 
 .content-wrapper {
